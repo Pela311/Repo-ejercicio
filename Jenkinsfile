@@ -53,7 +53,7 @@ pipeline {
  
         stage('Deploy') {
             when {
-                branch 'main'
+                branch 'master'
             }
             steps {
                 echo "Desplegando ${params.VERSION} desde main"
